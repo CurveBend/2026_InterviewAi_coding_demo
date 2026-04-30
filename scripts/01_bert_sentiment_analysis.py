@@ -4,7 +4,7 @@
 # first make sure python is install on your computer
 # in the terminal window (below) run: 
 # python
-# and then get the latest version from the microsoft store
+# and then get the latest version from the microsoft store and follow the default installation options
 
 # on first time use of this script create a  virtual environment .venv folder (similar to using renv in R)
 # the required libraries will be installed here, so stay together with the rest of the projectfolder
