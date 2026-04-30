@@ -7,8 +7,7 @@
 # in the terminal, run: 
 # python -m venv .venv
 
-# every time you open this script:
-# select the right interpreter Python 3.14.4 in Venv (topright in the screen under variables)
+# make sure interpreter Python 3.14.4 in Venv is selected, not R (topright in the screen under variables)
 
 # during the first time working with this script, run the following commands in the terminal below
 # to install the required libraries
