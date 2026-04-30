@@ -3,7 +3,8 @@
 # for documentation see: https://huggingface.co/docs/transformers/en/main_classes/pipelines
 
 # best to run Positron for this script as an administrator
-# create the virtual environment .venv folder in the terminal
+# on first time use of this script create the virtual environment .venv folder 
+# in the terminal, run: 
 # python -m venv .venv
 
 # every time you open this script:
@@ -16,7 +17,7 @@
 # pip install torch
 
 # in this script we use the model distilbert-base-uncased-finetuned-sst-2-english
-# that is described here (including warnings)
+# this model  is described here (including warnings)
 # https://huggingface.co/distilbert/distilbert-base-uncased-finetuned-sst-2-english
 # this model comes from Hugging Face (huggingface.co),  an online platform for sharing,
 # using, and building machine learning models—especially for natural language processing and, 
