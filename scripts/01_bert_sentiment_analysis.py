@@ -1,3 +1,7 @@
+####### BERT sentiment analysis for interview data #####
+# script: Han Olff, 30 apr 2026
+# for documentation see: https://huggingface.co/docs/transformers/en/main_classes/pipelines
+
 # best to run Positron for this script as an administrator
 # create the virtual environment .venv folder in the terminal
 # python -m venv .venv
@@ -10,6 +14,14 @@
 # pip install pandas
 # pip install transformers
 # pip install torch
+
+# in this script we use the model distilbert-base-uncased-finetuned-sst-2-english
+# that is described here (including warnings)
+# https://huggingface.co/distilbert/distilbert-base-uncased-finetuned-sst-2-english
+# this model comes from Hugging Face (huggingface.co),  an online platform for sharing,
+# using, and building machine learning models—especially for natural language processing and, 
+# increasingly, vision and audio.
+# think of it as github for AI models and datasets
 
 # load the required libraries
 import pandas as pd
@@ -29,7 +41,7 @@ sentiment_pipeline = pipeline(
 # or set it as environment variable in your terminal:
 # setx HF_TOKEN "your_token_here"
 
-# Load the dataset of the text responses to Question 1 of the survey
+# Load the example  dataset of the text responses to Question 1 of the survey
 url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRjv0h7adkomA-Z0oNSNVtZMtXdzdAoJI-RRSIGJBTFDWDkUnuVQ7YIp17o7DuZ0ShAJzsEFa5EyIku/pub?gid=1895111920&single=true&output=csv"
 df_all = pd.read_csv(url)
 # filter for only answers to he first question
