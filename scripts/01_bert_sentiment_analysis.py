@@ -1,13 +1,16 @@
 ####### BERT sentiment analysis for interview data #####
 # script: Han Olff, 30 apr 2026
-# for documentation see: https://huggingface.co/docs/transformers/en/main_classes/pipelines
 
-# best to run Positron for this script as an administrator
-# on first time use of this script create the virtual environment .venv folder 
+# first make sure python is install on your computer
+# in the terminal window (below) run: 
+# python
+# and then get the latest version from the microsoft store
+
+# on first time use of this script create a  virtual environment .venv folder (similar to using renv in R)
+# the required libraries will be installed here, so stay together with the rest of the projectfolder
 # in the terminal, run: 
 # python -m venv .venv
-
-# make sure interpreter Python 3.14.4 in Venv is selected, not R (topright in the screen under variables)
+# then make sure interpreter Python 3.14.4 in Venv is selected, not R (topright in the screen under variables)
 
 # during the first time working with this script, run the following commands in the terminal below
 # to install the required libraries
@@ -22,6 +25,14 @@
 # using, and building machine learning models—especially for natural language processing and, 
 # increasingly, vision and audio.
 # think of it as github for AI models and datasets
+# see for general info on hugginface pipelines 
+# https://huggingface.co/docs/transformers/en/main_classes/pipelines
+
+# for this demonstration, I made a fake interview dataset that you can explore here (remove hashtag and run the line)
+# https://docs.google.com/spreadsheets/d/e/2PACX-1vRjv0h7adkomA-Z0oNSNVtZMtXdzdAoJI-RRSIGJBTFDWDkUnuVQ7YIp17o7DuZ0ShAJzsEFa5EyIkuhttps://docs.google.com/spreadsheets/d/1hvSNGoxbLve4rrKM_pNMNRgggAnWzt4_3RaBvrctRBc/edit?usp=sharing
+# where 20 imaginary Maasai were interview on what they think of climate change
+# paste the above link in your browser and inspect the structure of the database
+# the question is map their qualitative answers to a quantitative scale of negative to positive sentiment
 
 # load the required libraries
 import pandas as pd
