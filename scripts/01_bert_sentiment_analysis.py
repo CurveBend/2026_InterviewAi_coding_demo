@@ -1,5 +1,4 @@
 # best to run Positron for this script as an administrator
-# install the nescessary libraries 
 # create the virtual environment .venv folder in the terminal
 # python -m venv .venv
 
@@ -7,6 +6,7 @@
 # select the right interpreter Python 3.14.4 in Venv (topright in the screen under variables)
 
 # during the first time working with this script, run the following commands in the terminal below
+# to install the required libraries
 # pip install pandas
 # pip install transformers
 # pip install torch
